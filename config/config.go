@@ -26,6 +26,7 @@ func New(env string) {
 		if err != nil {
 			fmt.Println(chalk.Red, "❌", err)
 			fmt.Println(chalk.Red, "Please create .env file")
+			panic(err)
 
 		}
 		fmt.Println(chalk.Green, "✅ .env loaded")
